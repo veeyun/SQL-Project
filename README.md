@@ -3,6 +3,9 @@
 ## Project/Goals
 This is my SQL Project
 
+[This is a link to google](www.google.com)
+![alt text](Images/sql-cheat-sheet_demo.png "A cheat sheet")
+
 ## Process
 ### (your step 1)
 ### (your step 2)
