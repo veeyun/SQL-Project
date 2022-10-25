@@ -1,5 +1,4 @@
-What are your risk areas? Identify and describe them.
-
+## Risk Areas
 * The tables contained similar data, which made it more difficult to choose which data to use for our analysis.
 
 
@@ -20,8 +19,7 @@ What are your risk areas? Identify and describe them.
 * Unit prices do not make sense, so as given in the hint, we need to divide by 1,000,000 and round decimal by monetary value
 
 
-QA Process:
-Describe your QA process and include the SQL queries used to execute it.
+## QA Process:
 
 * Rather than using the all_sessions table (which had limited data on totaltransactionrevenue or products ordered), I used the table (sales_by_sku) with more data points by product SKU.
 
@@ -102,4 +100,14 @@ SET column_name_1 = ROUND(column_name_1/1000000, 2)
 WHERE column_name_1 IS NOT NULL;
 ```
 
+## ERD
+
+![](Images/ecommerce_ERD.png "ERD generated from Postgresql")
+
+Constraints: I had assigned a Primary Key, however, because some fields have duplicates, Primary Key could not be assigned. In that case, I had use the following query by adding a column. 
+
+```SQL
+ALTER TABLE all_sessions 
+ADD COLUMN id SERIAL PRIMARY KEY;
+```
 

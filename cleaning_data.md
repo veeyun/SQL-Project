@@ -1,4 +1,4 @@
-What issues will you address by cleaning the data?
+## Cleaning Data
 
 Queries:
 1. Examples of filtering out duplicates, NULLs and remove columns with no significance (e.g. contains no field data)

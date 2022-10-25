@@ -10,8 +10,14 @@ Goals:
 
 ## Process
 Step 1: Import Data 
+
+
 Step 2: Understand the tables and the relationships between fields for each table
+
+
 Step 3: Clean data 
+
+
 Step 4: Analysis using query to find patterns in total product revenue and sales 
 
 
